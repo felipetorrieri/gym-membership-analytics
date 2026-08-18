@@ -1,0 +1,1 @@
+SELECT activity, COUNT(*) AS visits, COUNT(DISTINCT member_id) AS unique_members FROM visits GROUP BY activity ORDER BY visits DESC;

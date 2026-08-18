@@ -1,0 +1,1 @@
+SELECT substr(join_date,1,7) AS month, COUNT(*) AS new_members FROM members GROUP BY 1 ORDER BY 1;

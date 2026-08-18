@@ -1,0 +1,1 @@
+SELECT acquisition_channel, COUNT(*) AS acquired_members, SUM(CASE WHEN status='Active' THEN 1 ELSE 0 END) AS active_members, ROUND(AVG(tenure_months),1) AS avg_tenure_months, ROUND(AVG(monthly_fee),2) AS avg_monthly_fee FROM members GROUP BY acquisition_channel;

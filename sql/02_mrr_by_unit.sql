@@ -1,0 +1,1 @@
+SELECT month, unit, COUNT(*) AS active_members, ROUND(SUM(recognized_revenue),2) AS mrr, ROUND(AVG(monthly_fee),2) AS avg_ticket FROM monthly_membership GROUP BY month, unit ORDER BY month, mrr DESC;

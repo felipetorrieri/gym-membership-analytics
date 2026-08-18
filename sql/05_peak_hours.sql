@@ -1,0 +1,1 @@
+SELECT unit, time_slot, COUNT(*) AS visits, COUNT(DISTINCT member_id) AS unique_members FROM visits GROUP BY unit,time_slot ORDER BY unit,visits DESC;
